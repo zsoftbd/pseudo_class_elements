@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo_class_elements</title>
+    <style>
+        h2:hover {
+            color: black;
+            background-color: antiquewhite;
+            font-size: 60px;
+        }
+        
+        input:checked {
+            height: 50px;
+            width: 50px;
+        }
+        
+        li:first-child {
+            background-color: aqua;
+        }
+        
+        a:visited {
+            background-color: red;
+        }
+        
+        .active_in:focus {
+            background-color: aqua;
+        }
+        
+        h1::after {
+            content: ", hello Bangladesh";
+        }
+        
+        h1::before {
+            content: " Zsoft Bangladesh ";
+        }
+        
+        li:first-child {
+            background-color: aqua;
+        }
+        
+        li:last-child {
+            background-color: rgb(255, 0, 111);
+        }
+        
+        h3::after {
+            content: url(emoji.png);
+        }
+        
+        h3::before {
+            content: url(emoji.png);
+        }
+        
+        p:empty {
+            width: 100px;
+            height: 30px;
+            background: #ff0000;
+        }
+        
+        .inv_psu:invalid {
+            border: 2px solid rgb(255, 0, 111);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pseudo class -->
+    <h2>This is normal</h2>
+
+    <input type="radio" checked="checked" valu="male" name="gender">Male<br>
+    <input type="radio" checked="checked" valu="female" name="gender">Female<br>
+    <input type="checkbox" checked="clecked" value="pan">Do you have a pan<br>
+    <input type="checkbox" value="pan">I don't have a pan<br>
+
+    <input class="active_in" type="text" placeholder="Enter and active"><br>
+
+    <a href="https://zsoftbd.github.io/food_website/">Zsoftbd </a>
+    <a href="https://zsoftbd.github.io/Zdeveloper-portfolio/">Zsoftbd </a>
+    <a href="https://google.com">google</a>
+
+    <h1>This is pseudo 1</h1>
+    <h1>This is pseudo 2</h1>
+    <h1>This is pseudo 3</h1>
+    <h1>This is pseudo 4</h1>
+    <h1>This is pseudo 5</h1>
+
+    <ul>
+        <li>list items 1</li>
+        <li>list items 2</li>
+        <li>list items 3</li>
+        <li>list items 4</li>
+        <li>list items 5</li>
+        <li>list items 6</li>
+    </ul>
+
+    <h3>this is hdding</h3>
+    <p></p>
+    <input class="inv_psu" type="Email" value="ZsoftEmail">
+
+</body>
+
+</html>
